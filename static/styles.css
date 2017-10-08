@@ -1,0 +1,58 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.header_bar {
+	background-color: #4c4b4b;
+	color: #dedede;
+}
+
+a {
+	color: #fff !important;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #4c4b4b;
+    border-color: #ccc;
+}
+
+.log_button {
+	position: fixed;
+	top: 20px;
+	right: 40px;
+}
+
+.main {
+	 background-color: #7b7373;
+}
+
+.flash {
+	background-color: #202420;
+	width:100%;
+	text-decoration: none;
+
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+
+}
+
+.category {
+	color: #4c4b4b
+}
+.title {
+	text-align: center;
+	font-size: -webkit-xxx-large;
+	margin-top: 0;
+	margin-bottom: 25px;
+	padding: 10px 0 10px 0;
+}
+
+.container {
+	background-color: lightgray;
+	border-radius: 20px
+}

@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="row">
+	<div class="col-md-5">
+		<h2>Categories</h2>
+	</div>
+</div>
+{% for category in categories %}
+		<a href = "{{url_for('showMenu', category_name = category.name)}}">
+					<div class="col-md-4 category">
+						<h3>{{category.name}}</h3>
+					</div>
+		</a>
+{% endfor %}
+<div class="row">
+	<div class="col-md-4 category">
+		<a href = "{{url_for('addCategoryRenderer')}}"><button type="submit" class="btn btn-default" id="submit" type="submit">Add Category</button><br><br></a>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-5">
+		<h2>Latest Added Items (Top 5)</h2>
+	</div>
+</div>	
+{% for item in latest_items %}
+					<div class="col-md-4 category">
+						<h3>{{item.name}}</h3><p>({{item.category.name}})</p>
+					</div>
+{% endfor %}
+{% if loggedIn %}
+{% endif %}				
+{% endblock %}

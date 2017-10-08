@@ -1,0 +1,35 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="row">
+	<div class="col-md-10">
+		{% if isEdit %}
+		<h2>Edit Item</h2>
+		{% else %}
+		<h2>Add {{category_name}}</h2>
+		{% endif %}	
+	</div>
+</div>	
+<div class="row">
+	<div class="col-md-10">
+		{% if isEdit %}
+		<form action="#" method = "post">
+		<label for="edit_name">Title</label>&nbsp&nbsp<input type="text" value="{{item.name}}" name="edit_name"><br>
+		<label for="edit_description">Description</label>&nbsp&nbsp<textarea row="50" cols="50" name="edit_description">{{item.description}}</textarea><br>
+		<label>Category</label>&nbsp&nbsp
+		<select name="edit_category">
+		{% for category in categories%}
+			<option value="{{category.name}}">{{category.name}}</option>
+		{% endfor %}
+		</select><br><br>
+		<button type="submit" class="btn btn-default" id="submit" type="submit">Submit</button><br><br>
+		</form>
+		{% else %}
+		<form action="#" method = "post">
+		<label for="name">Title: </label>&nbsp&nbsp<input type="text" name="add_name"><br>
+		<label for="description">Description: </label>&nbsp&nbsp<textarea row="50" cols="50" name="add_description"></textarea><br>
+		<button type="submit" class="btn btn-default" id="submit" type="submit">Submit</button><br><br>
+		</form>
+		{% endif %}
+	</div>
+</div>		
+{% endblock %}
