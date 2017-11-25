@@ -1,6 +1,6 @@
 # PROJECT - ITEM CATALOG
 
------------ WHAT THIS PROJECT INCLUDES ----------
+# WHAT THIS PROJECT INCLUDES 
  
  1) static folder - which includes a file styles.css
  2) templates folder - which includes the following html files
@@ -19,7 +19,8 @@
  
  (NOTE: In case you get an error while loggin in, you might want to create your own client_secret.json file)
  
- -----STEPS TO CREATE NEW client_secret.json-----
+ # STEPS TO CREATE NEW client_secret.json
+ 
 1) Go to your app's page in the Google APIs Console — https://console.developers.google.com/apis
 2) Choose Credentials from the menu on the left.
 3) Create an OAuth Client ID.
@@ -32,9 +33,9 @@
 
 you can get more information here - https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/348776022975461/lessons/3967218625/concepts/39636486130923
  
- (NOTE: ALwyas save the file name as client_secret.json only)
+ (NOTE: ALways save the file name as client_secret.json only)
 
----------- STEPS TO RUN THIS PROJECT ----------
+# STEPS TO RUN THIS PROJECT
 
  1) Download Vagrant and VirtualBox. You can download them from the links below:
     Vagrant - https://www.vagrantup.com/
@@ -54,7 +55,7 @@ you can get more information here - https://classroom.udacity.com/nanodegrees/nd
     - 'python application.py'. (Your flask application begins running on http://localhost:8000)
     
 
----------- PROJECT DESIGN ----------
+# PROJECT DESIGN 
 
 1) The main page (/menu) contain s the list of categories with the list of recently added items just below it. There is also a login and logout button at the top right corner of the page
 2) Clicking on any of the category redirects to the url (/catalog/<category_name>)
