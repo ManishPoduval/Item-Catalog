@@ -21,7 +21,7 @@
  
  # STEPS TO CREATE NEW client_secret.json
  
-1) Go to your app's page in the Google APIs Console — https://console.developers.google.com/apis
+1) Go to your app's page in the [Google APIs Console](https://console.developers.google.com/apis)
 2) Choose Credentials from the menu on the left.
 3) Create an OAuth Client ID.
 4) This will require you to configure the consent screen, with the same choices as in the video.
@@ -31,15 +31,13 @@
 7) You will then be able to get the client ID and client secret.
 8) Download the file and save it as client_secret.json in the same directory as your application.py file
 
-you can get more information here - https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/348776022975461/lessons/3967218625/concepts/39636486130923
+you can get more information [here](https://classroom.udacity.com/nanodegrees/nd004/parts/8d3e23e1-9ab6-47eb-b4f3-d5dc7ef27bf0/modules/348776022975461/lessons/3967218625/concepts/39636486130923)
  
  (NOTE: ALways save the file name as client_secret.json only)
 
 # STEPS TO RUN THIS PROJECT
 
- 1) Download Vagrant and VirtualBox. You can download them from the links below:
-    Vagrant - https://www.vagrantup.com/
-    VirtualBox - https://www.virtualbox.org/wiki/Downloads
+ 1) Download [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
     
  2) After Vagrant and VirtualBox is successfully installed you will need to run the following commands
     
